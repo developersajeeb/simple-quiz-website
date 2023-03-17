@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    h1,
+    p,
+    span {
+      font-family: "Rubik", "sans-serif";
+    }
+  </style>
+</head>
+
+<body class="bg-slate-100">
+  <main>
+    <section class="m-4 md:m-8 rounded-lg p-3 md:p-5 ockup-window border shadow-lg">
+      <h1 class="text-2xl font-semibold mb-3">1. What is the difference between map(), filter(), forEach(), find()?</h1>
+      <p><span class="font-semibold">Ans: </span><strong>map()</strong> creates a new array with modified elements.
+        <strong>filter()</strong> creates a new array with only certain elements that satisfy a condition.
+        <strong>forEach()</strong> executes a function for each element of an array.
+        <strong>find()</strong> returns the first element of an array that satisfies a condition.
+      </p>
+
+      <h1 class="text-2xl font-semibold mb-3 mt-3">2. What is the difference between Local Storage, Session Storage &
+        Cookie?</h1>
+      <p><span class="font-semibold">Ans:<br></span><strong>Local storage:</strong> If any data is saved in local
+        storage, that data remains forever, until the data is manually deleted.<br>
+        <strong>Session Storage:</strong> If any data is kept in session storage then that data will remain until the
+        browser is closed or the specific tab is not closed.<br>
+        <strong>Cookie:</strong> When a user visits a website, the server sends a cookie to the user's browser, which
+        then stores it on the user's computer. The cookie contains information about the user's visit to the website,
+        such as login information, preferences, and browsing history.
+      </p>
+
+      <h1 class="text-2xl font-semibold mb-3 mt-3">3. What is an Event Loop? And how does work it?</h1>
+      <p><span class="font-semibold">Ans: </span>A crucial part of JavaScript's asynchronous programming style is the
+        Event Loop, which enables code to run without stopping and effectively manage I/O activities. Because of the
+        Event Loop, which manages the processing of several concurrent events on a single thread, JavaScript is
+        frequently used to create scalable and effective web applications.
+        The sole task of the event loop is to keep track of the call stack and callback queue. The Event Loop will pull
+        the first event from the queue and put it to the Call Stack, which will then execute it if the Call Stack is
+        empty.</p>
+
+      <h1 class="text-2xl font-semibold mb-3 mt-3">4. quizTimer() & chooseQuiz() are working:</h1>
+      <p><span class="font-semibold">Ans:<br></span><strong>quizTimer(): </strong>The 'quizTimer' function takes a
+        single
+        parameter called 'dismiss'. This function is starting a timer and displays the countdown in minutes and seconds
+        on an HTML element with an ID of "count". If the 'dismiss' parameter is 'true', the function clears the interval
+        of the timer and stops the countdown. Otherwise, it continues the countdown by incrementing a variable called
+        'count' every second. The function calculates the minutes and seconds of the countdown by using the 'Math.floor'
+        function to convert the total number of seconds into minutes and then take the remainder to calculate the
+        seconds. It then checks the length of the minutes and seconds to ensure that they are two digits, and if not, it
+        prepends a 0 to the value. The function updates the text content of the HTML element with the ID of 'count' to
+        display the current countdown in minutes and seconds with the 'sec' unit in a subscript. The function also adds
+        a CSS class to the HTML element to change the text color every 60 seconds. If the 'count' is divisible by 2, the
+        text color changes to "text-red-700" and if not, it changes to "text-red-300".<br>
+        <strong>chooseQuiz(): </strong>The chooseQuiz function takes two parameters': index' and 'givenAns'. The index
+        parameter is an integer value that represents the index of the quiz in the quizData array, while the givenAns
+        parameter is the answer given by the user for that quiz. The function first checks if the quiz has already been
+        answered by searching for its ID in the answers array. If it is already answered, it updates the answer with the
+        new answer given by the user. Otherwise, it adds the quiz with the user's answer to the answers array. After
+        updating or adding the quiz, the function calls displayAnswers() function to display the updated answers.
+      </p>
+    </section>
+  </main>
+
+</body>
+
+</html>
